@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<style>
+  body {
+    background: url('/static/images/home.jpeg') no-repeat center center fixed;
+	  background-size: cover;
+	  -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-clip: border-box;
+  	height: 100%;
+  }
+</style>
+  <div class="container">
+    <h1 class="d-flex m-2 p-1 text-warning display-3 align-content-lg-around justify-content-center align-items-center"> 
+       Welcome to the Recipe Tips </h1>
+       <div class="d-flex">
+          <div class="jumbotron col-lg-8 my-4 px-6 offset-md-2 justify-content-center">
+            <div className="card">
+              <div className="card-body">
+                <div class="col-md-10 offset-md-2 ">
+                  <a href="/random"><img class="float-right" id="logo1" src="/static/images/logos4.jpeg" alt="logo"> </a>
+                </div>     
+                <h5 class="text-light"> 
+                  For a quick start, just click on the Logo and see the random recipes auto populated. 
+                  <br><i class="far fa-hand-point-right text-success display-6"></i> <br> 
+                  Select food by name, or complex recipe search like dairy free, high protein, low sodium by using the search bar.  
+                  <br>On the left top navbar just click on the badge and can use recipe searth "what's left in your fridge" or random recipes.  
+                </h5>
+              </div>
+            <br>
+            <p class="text-center text-success display-6"> Bon Appetit! </p>
+          </div>
+      </div>
+    </div>
+</div>
+{% endblock %}
